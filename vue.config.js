@@ -1,8 +1,12 @@
+const path = require('path');
+
 module.exports = {
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'less',
-      patterns: []
+      patterns: [
+        path.resolve(__dirname, 'src/assets/common/base.less'),
+      ]
     }
   }
 }
